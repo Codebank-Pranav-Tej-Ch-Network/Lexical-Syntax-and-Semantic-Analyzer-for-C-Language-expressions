@@ -1,0 +1,13 @@
+// inp4: INVALID expressions -- parser must report and keep going
+a = b + ;                   // missing right operand
+a = (b + c;                 // unbalanced '('
+a + * / b;                  // '*' is a deref here, '/' cannot follow
+a = ;                       // nothing after '='
+= b;                        // nothing before '='
+x = (a + b));               // extra ')'
+x = a b;                    // two operands, no operator
+a + b = c;                  // left side of '=' is not a unary expression
+x = 3 @ 4;                  // invalid character
+x = a--b;                   // lexes as a -- b
+y = 5 + 7;                  // VALID: I've added this to show recovery works after errors
+z = a +
