@@ -1,0 +1,11 @@
+// inp2: prefix and postfix ++
+x = a++ + ++b;              // assignment sample
+x = a+++b;                  // a ++ + b
+x = a---b;                  // a -- - b
+x = a-- - --b;
+x = a++ + ++b - c--;
+++a;
+b--;
+x = - --a;                  // unary minus applied to pre-decrement
+x = ++a * b--;
+i = j++ * 2 + --k;
