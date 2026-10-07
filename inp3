@@ -1,0 +1,19 @@
+// inp3: pointer expressions
+x = *p++;                   // *(p++)  : dereference old p, then p++
+x = *++p;                   // *(++p)
+x = (*p)++;                 // (*p)++  : increment the pointed value
+x = ++*p;                   // ++(*p)
+x = *p--;
+x = *--p;
+*p = a + b;                 // dereference as assignment target
+x = *(p + i);               // pointer arithmetic
+*(p + 1) = 5;
+*p++ = *q++;                // classic copy
+x = **pp;                   // double dereference
+x = &a;                     // address-of
+p = &*q;
+x = *&a;
+x = a * *p;                 // binary * then unary *
+x = a**p;                   // same, no spaces
+x = *p * *q;
+x = -*p + +*q;
