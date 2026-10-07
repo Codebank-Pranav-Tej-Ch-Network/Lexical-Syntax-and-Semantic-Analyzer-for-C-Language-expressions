@@ -1,0 +1,13 @@
+// inp1: arithmetic, precedence and associativity
+a = b + c * d;              // * binds tighter than +
+9 - 5 + 2;                  // Textbook Sec 2.2: left-assoc  ((9-5)+2)
+x = a - b - c;              // left-assoc
+x = a / b % c * d;          // * / % share a level, left-assoc
+a = b = c = 0;              // = is right-assoc
+x = (a + b) * (c - d);      // parentheses override precedence
+x = id1 + id2 * id3;        // Textbook Ex. 4.x: id + id * id
+x = (id1 + id2) * id3;      // Textbook: (id + id) * id
+y = -a + +b - -c;           // unary vs binary +/-
+x = 3.14 * r * r;           // floating constant
+x = 1e-3 + .5 + 2. + 6.02E23;   // constant forms
+x = ((((a))));              // nested parentheses
